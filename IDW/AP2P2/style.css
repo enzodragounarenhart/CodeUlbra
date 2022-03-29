@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+
+}
+
+.jumbotron-fluid {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.jumbotron-fluid h1 {
+    margin: 0;
+}
+
+.banner {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.col-sm-12 h1 {
+    margin: 0;
+}
+
+.col-sm-12 h2 {
+    color: rgba(0, 0, 0, 0.541176);
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.row p {
+    margin-top: 29px;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.row{
+    width: 100%;
+    margin: 0px;
+}

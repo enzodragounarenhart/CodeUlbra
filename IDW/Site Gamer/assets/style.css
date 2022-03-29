@@ -1,0 +1,56 @@
+body{
+	background-color: darkred;
+}
+
+#div1{
+	color: gold;
+	background-image: url('images/SPQRnew.png');
+	height: 128px;
+	text-align: center;
+	padding-top: 30px;
+}
+img{
+	width: 200px;
+	height: 350px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: purple;
+	text-align: center;
+}
+
+#div2{
+	background-color: purple;
+	height: 128px;
+	padding-top: 20px;
+	color: white;
+}
+
+#div3{
+	background-color: darkgoldenrod;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+h1{
+	color: gold;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+p{
+	font-size: 20px;
+	font-family: serif;
+	color: black;
+	text-align: justify;
+	text-indent: 30px;
+	padding: 20px;
+}
+
+hr{
+	border-color: black;
+}

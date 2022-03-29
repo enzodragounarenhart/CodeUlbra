@@ -1,0 +1,23 @@
+*{
+    margin: 0 auto;
+}
+
+header{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+}
+
+nav{
+    text-align: right;
+    padding: 25px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+section{
+    background-color: yellowgreen;
+    padding: 20px;
+}

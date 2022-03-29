@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+}
+
+.row {
+    clear: both;
+    overflow: auto;
+}
+
+hr {
+    background-color: darkred;
+    height: 3px;
+}
+
+.tudo {
+    border: groove 3px black;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    margin-bottom: 1%;
+}
+
+#newsettler {
+    text-align: right;
+    background-color: rgb(255, 193, 7);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.divsTop {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+
+#title {
+    padding: 10px;
+}
+
+#photo {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+
+#idImg {
+    width: 312px;
+    height: 312px;
+    border-radius: 100%;
+}
+
+#address {
+    float: right;
+    width: 60%;
+    margin-left: 5%;
+}
+
+span {
+    color: darkred;
+}
+
+#esquerda {
+    float: left;
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#direita {
+    float: right;
+    width: 40%;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+
+.itens {
+    float: left;
+}

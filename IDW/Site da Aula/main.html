@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meu Site Gamer</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<script src="assets/script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="p-5">
+	<h1>BMI Calculator</h1>
+	<form action="#">
+		<div class="form-group">
+			<label for="">Name: </label>
+			<input type="text" name="name" id="form-control">
+
+		</div>
+
+		<div class="form-group">
+			<label for="">Sex: </label>
+			<select name="sex" id="gender">
+				<option value="m">Male</option>
+				<option value="f">Female</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="">Weight</label>
+			<input type="text" name="" id="weight">
+		</div>
+
+		<div class="form-group">
+			<label for="">Height</label>
+			<input type="text" name="" id="height">
+		</div>
+
+		<button type="submit" class="btn btn-primary" onclick="calcImc(document.getElementByName('name').value,document.getElementById('gender'),document.getElementById('weight'),document.getElementById('height'))">Calculate</button>
+
+
+	</form>
+</body>
+</html>
