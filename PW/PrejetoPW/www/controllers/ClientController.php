@@ -1,6 +1,6 @@
 <?php
 
-    class SiteController{
+    class ClientController{
 
         public function insertClient()
         {
