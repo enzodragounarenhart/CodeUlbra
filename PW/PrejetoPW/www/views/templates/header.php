@@ -15,13 +15,16 @@
     </head>
     <body>  
 
-        <header class="jumbotron">
+        <header class="p-5 bg-primary text-white text-center">
             <h1>Cabecalho do Sistema MVC</h1>
+            <p>Exemplo de estrutura para utilizarmos na disciplina de PW!!</p>
         </header>
 
-        <div class="row">
-            <nav class="navbar bg-light col-md-3">
-                <ul class="navbar-navd">
+        
+        <section class="row">
+            <nav class="col-md-3 p-3">
+                <h2>Menu</h2>
+                <ul class="nav flex-column">
                     <li class="nav-item">
                         <a id="home" class="nav-link" href="?controller=site&action=home">Home</a>
                     </li>
@@ -34,9 +37,13 @@
                     <li class="nav-item">
                         <a id="home" class="nav-link" href="?controller=site&action=contact">Contato</a>
                     </li>
+                    <h3>Clientes</h3>
+                    <li>
+                        <a class="nav-link" href="?controller=client&action=insertClient">Cadastro</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
     </body>
 </html>
