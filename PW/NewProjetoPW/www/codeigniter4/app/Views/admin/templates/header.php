@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>">
+
+    </head>
+    <body>  
+
+        <header class="p-5 bg-secondary text-white text-center">
+            <h1>Area Administrativa</h1>
+            <p>Exemplo de estrutura admin.</p>
+            <a class="link-light" href="<?=base_url('admin/logout')?>">Sair</a>
+        </header>
+
+        
+        <section class="row">
+            <nav class="col-md-3 p-3 text-center">
+                <h2>Menu</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="<?= base_url('admin');?>">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="<?= base_url('admin/listContacts');?>">Contatos</a>
+                    </li>
+                    <h3>Clientes</h3>
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="<?= base_url('admin/listClients');?>">Listar Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="home" class="nav-link" href="<?= base_url('admin/insertClient');?>">Novo Cliente</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <article class="row col-md-9 p-3">

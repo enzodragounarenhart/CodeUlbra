@@ -1,30 +1,27 @@
 <?php
+class ClientController{
 
-    class ClientController{
-
-        public function insertClient()
-        {
-            require_once("views/templates/header.php");
-            require_once("views/pages/insertClient.php");
-            require_once("views/templates/footer.php");
+    function __construct(){
+        if (!isset($_SESSION["login"])){
+            header("Location: index.php?c=m&a=l");
         }
-
-        public function insertClientAction()
-        {
-
-            $client = array(
-
-                'name' => $_POST['name'],
-                'phone' => $_POST['phone'],
-                'email' => $_POST['email'],
-                'address' => $_POST['address']
-
-            );
-
-            require_once("views/templates/header.php");
-            require_once("views/pages/insertClientAction.php");
-            require_once("views/templates/footer.php");
-        }
+        
+        require_once("models/ClientsModel.php");
     }
 
+    public function listClients(){
+        $ClientModel = new ClientModel();
+        $ClientModel -> listClient();
+        $result = $ClientModel -> getConsult();
+
+        $arrayClient = array();
+
+        while ($line = $result->fetch_assoc()) {
+            array_push($arrayClient,$line);
+        }
+        require_once ("views/templates/header.php");
+        require_once ("views/client/ListClients");
+        require_once ("views/templates/footer.php");
+    }
+}
 ?>

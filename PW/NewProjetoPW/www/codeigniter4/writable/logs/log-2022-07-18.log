@@ -1,0 +1,90 @@
+CRITICAL - 2022-07-18 20:49:12 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH/Controllers/Client.php on line 25.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Client.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 21:20:24 --> Undefined variable $admin
+in APPPATH/Views/templates/footer.php on line 4.
+ 1 APPPATH/Views/templates/footer.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'APPPATH/Views/templates/footer.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/footer.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/footer', [], true)
+ 5 APPPATH/Controllers/Client.php(17): view('templates/footer')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 21:55:10 --> Invalid file: pages/contact.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/contact.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/contact', [], true)
+ 3 APPPATH/Controllers/Site.php(15): view('pages/contact')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('contact')
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 22:13:59 --> Invalid file: pages/products.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/products.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 3 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 22:16:11 --> Invalid file: pages/contact.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/contact.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/contact', [], true)
+ 3 APPPATH/Controllers/Site.php(15): view('pages/contact')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('contact')
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 22:40:58 --> Undefined variable $client
+in APPPATH/Views/pages/contact.php on line 10.
+ 1 APPPATH/Views/pages/contact.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH/Views/pages/contact.php', 10)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/contact.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/contact', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/contact')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('contact')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 22:48:44 --> Invalid file: admin/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/login.php', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/login.php')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 22:49:15 --> Invalid file: admin/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/login', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/login')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 23:26:49 --> Call to undefined method App\Models\UserModel::getUsers
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User.php(25): CodeIgniter\Model->__call('getUsers', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\admin\User->validateLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-18 23:30:23 --> Call to undefined method App\Models\UserModel::listUser
+in SYSTEMPATH/Model.php on line 773.
+ 1 APPPATH/Controllers/Admin/User.php(25): CodeIgniter\Model->__call('listUser', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\admin\User->validateLogin()
+ 3 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\User))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

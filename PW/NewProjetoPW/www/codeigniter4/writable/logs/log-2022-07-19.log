@@ -1,0 +1,19 @@
+CRITICAL - 2022-07-19 00:32:17 --> Invalid file: admin/client/insertClient.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/client/insertClient.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/client/insertClient', [], true)
+ 3 APPPATH/Controllers/Admin/Client.php(45): view('admin/client/insertClient')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\admin\Client->insertClient()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-19 01:10:38 --> Allowed fields must be specified for model: App\Models\ContactModel
+in SYSTEMPATH/BaseModel.php on line 1138.
+ 1 SYSTEMPATH/BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\ContactModel')
+ 2 SYSTEMPATH/BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH/Controllers/Contact.php(30): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->insertMessageAction()
+ 6 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

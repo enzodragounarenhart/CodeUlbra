@@ -1,0 +1,197 @@
+CRITICAL - 2022-07-12 19:36:08 --> CodeIgniter\Router\RouteCollection::get(): Argument #3 ($options) must be of type ?array, string given, called in /var/www/html/codeigniter4/app/Config/Routes.php on line 39
+in SYSTEMPATH/Router/RouteCollection.php on line 876.
+ 1 APPPATH/Config/Routes.php(39): CodeIgniter\Router\RouteCollection->get('/', 'controllers', 'ClientController::listClients')
+ 2 SYSTEMPATH/CodeIgniter.php(760): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 20:33:14 --> require_once(models/ClientsModel.php): Failed to open stream: No such file or directory
+in APPPATH/Controllers/ClientController.php on line 12.
+ 1 APPPATH/Controllers/ClientController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(models/ClientsModel.php): Failed to open stream: No such file or directory', 'APPPATH/Controllers/ClientController.php', 12)
+ 2 APPPATH/Controllers/ClientController.php(12): require_once()
+ 3 SYSTEMPATH/CodeIgniter.php(860): App\Controllers\ClientController->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(459): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 20:57:55 --> Undefined variable $arrayClients
+in APPPATH/Views/client/listClients.php on line 14.
+ 1 APPPATH/Views/client/listClients.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arrayClients', 'APPPATH/Views/client/listClients.php', 14)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/ClientController.php(15): view('client/listClients')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\ClientController->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:02:25 --> syntax error, unexpected token "echo"
+in APPPATH/Controllers/ClientController.php on line 16.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ClientController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ClientController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ClientController')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\ClientController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:02:28 --> syntax error, unexpected token "echo"
+in APPPATH/Controllers/ClientController.php on line 16.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ClientController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ClientController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ClientController')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\ClientController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:02:46 --> Undefined array key "idclient"
+in APPPATH/Views/client/listClients.php on line 17.
+ 1 APPPATH/Views/client/listClients.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idclient"', 'APPPATH/Views/client/listClients.php', 17)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/ClientController.php(17): view('client/listClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\ClientController->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:38:23 --> Undefined variable $products
+in APPPATH/Views/pages/products.php on line 13.
+ 1 APPPATH/Views/pages/products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH/Views/pages/products.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:38:32 --> Undefined variable $product
+in APPPATH/Views/pages/products.php on line 13.
+ 1 APPPATH/Views/pages/products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH/Views/pages/products.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:38:49 --> Undefined variable $products
+in APPPATH/Views/pages/products.php on line 13.
+ 1 APPPATH/Views/pages/products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH/Views/pages/products.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:39:28 --> Undefined variable $products
+in APPPATH/Views/pages/products.php on line 13.
+ 1 APPPATH/Views/pages/products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH/Views/pages/products.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:39:49 --> Undefined variable $products
+in APPPATH/Views/pages/products.php on line 13.
+ 1 APPPATH/Views/pages/products.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH/Views/pages/products.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/products.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 5 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:42:25 --> Invalid file: product/listProducts.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('product/listProducts.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('product/listProducts', [], true)
+ 3 APPPATH/Controllers/Product.php(17): view('product/listProducts', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:47:05 --> Invalid file: products.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('products', [], true)
+ 3 APPPATH/Controllers/Product.php(17): view('products', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:47:34 --> Invalid file: views/products.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/products.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('views/products', [], true)
+ 3 APPPATH/Controllers/Product.php(17): view('views/products', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:48:03 --> Invalid file: listProducts.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listProducts.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('listProducts', [], true)
+ 3 APPPATH/Controllers/Product.php(17): view('listProducts', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:48:05 --> Invalid file: listProducts.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listProducts.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('listProducts', [], true)
+ 3 APPPATH/Controllers/Product.php(17): view('listProducts', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:48:22 --> Undefined array key "idClient"
+in APPPATH/Views/pages/listProducts.php on line 16.
+ 1 APPPATH/Views/pages/listProducts.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClient"', 'APPPATH/Views/pages/listProducts.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/listProducts.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/listProducts', [], true)
+ 5 APPPATH/Controllers/Product.php(17): view('pages/listProducts', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Product->listProducts()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:56:57 --> Undefined variable $products
+in APPPATH/Views/pages/listContacts.php on line 13.
+ 1 APPPATH/Views/pages/listContacts.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH/Views/pages/listContacts.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/listContacts.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/listContacts', [], true)
+ 5 APPPATH/Controllers/Contact.php(17): view('pages/listContacts', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->listContacts()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:57:15 --> Undefined array key "idClient"
+in APPPATH/Views/pages/listContacts.php on line 16.
+ 1 APPPATH/Views/pages/listContacts.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClient"', 'APPPATH/Views/pages/listContacts.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/listContacts.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/listContacts', [], true)
+ 5 APPPATH/Controllers/Contact.php(17): view('pages/listContacts', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->listContacts()
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-12 21:58:04 --> Invalid file: pages/products.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/products.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/products', [], true)
+ 3 APPPATH/Controllers/Site.php(15): view('pages/products')
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->view('products')
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
